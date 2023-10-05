@@ -21,3 +21,30 @@ input, button {
     margin-bottom: 8px;
     width: 100%;
 }
+
+h1 {
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+h2{
+    text-align: justify;
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+button{
+    background-color: rgba(18, 106, 141, 0.801);
+    color: white;
+    font-style: italic;
+}
+
+button:hover{
+    background-color: rgba(11, 67, 88, 0.801);
+    cursor: pointer;
+}
+
+input{
+    border-color: rgba(18, 106, 141, 0.801);
+    outline-color: rgba(11, 67, 88, 0.801);
+}
