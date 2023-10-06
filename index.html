@@ -9,13 +9,15 @@
 <body>
     <div class="container">
         <h1>Conta Corrente</h1>
-        <!-- <h2>Saldo</h2> -->
-        <h2>O valor da sua conta corrente deverá ser maior que o valor que deseja transferir. Recomendamos sempre deixar algum valor em conta corrente para as movimentações diárias!</h3>
-        <form class="form-transfer">
-            <input type="number" required placeholder="Digite o valor que deseja transferir:">
-            <input type="number" required placeholder="Digite o valor que possui em conta corrente:">
-            <button type="submit">TRANSFERIR</button>
+        <h2>O valor do seu saldo deverá ser maior que o valor que deseja transferir. Recomendamos sempre deixar algum valor em conta corrente para as movimentações diárias!</h3>
+        <form id="form-transfer">
+            <input id="campoA" type="number" required placeholder="Digite o valor que deseja transferir:">
+            <p class="error-message">O valor da sua transferência deverá ser menor que o valor do seu saldo!</p>
+            <input id="campoB" type="number" required placeholder="Digite o valor do seu saldo:">
+            <button id="btTransfer" type="submit">TRANSFERIR</button>
+            <p class="success-message"></p>
         </form>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>
